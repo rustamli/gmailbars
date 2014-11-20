@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GmailBars: Options</title>
+    <style type="text/css">
+        body {
+            background: #EEE;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-size: 14px;
+        }
+
+        #main {
+            width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .template {
+            display: block;
+            margin: 0 0 10px 0;
+            padding: 10px;
+            background-color: #FFF;
+        }
+
+        .template input, .template textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 6px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif !important;
+        }
+
+        .template textarea {
+            height: 80px;
+        }
+
+        button {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .delete-template {
+            color: red;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #export-box, #import-box {
+            display: none;
+        }
+
+        #export-box-textarea, #import-box-textarea {
+            margin: 20px 0 10px 0;
+            width: 100%;
+            padding: 6px;
+            height: 150px;
+            background: #EE5;
+            font-family: 'Segoe UI', Tahoma, sans-serif !important;
+        }
+
+        #import-box-textarea {
+            background: #9CE;
+        }
+    </style>
+
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+
+</head>
+<body>
+
+<div id="main">
+
+<h1>GmailBars Options</h1>
+
+<div class="templates">
+</div>
+
+<div class="toolbar">
+    <button id="add-new">Add Tempalte</button>
+    <button id="export">Export</button>
+    <button id="import">Import</button>
+    <button id="save">Save Settings</button>
+</div>
+
+<div id="export-box">
+    <textarea id="export-box-textarea"></textarea>
+    <br>
+    <button id="close-export">Close</button>
+</div>
+
+<div id="import-box">
+    <textarea id="import-box-textarea"></textarea>
+    <br>
+    <button id="accept-import">Import</button>
+</div>
+
+<h4 style="text-align: center; margin-top: 50px;">Created by Turan Rustamli <br>turan@rustam.li<br>  twitter.com/nehfy</h4>
+
+<script src="options.js"></script>
+</body>
+</html>
